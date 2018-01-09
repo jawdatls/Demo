@@ -96,6 +96,15 @@
                 "style": "width:100%;",
                 "width": ""
             }
+        },
+        "substitution": {
+            "prototype": "montage/ui/substitution.reel",
+            "properties": {
+                "element": {"#": "substitution"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
         }
     }
     </script>
@@ -104,9 +113,12 @@
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow">
             <div data-montage-id="image1">
-                <output data-montage-id="badge"></output>
+                <output data-montage-id="badge">
+
+                </output>
             </div>
         </div>
+        <div data-montage-id="substitution"></div>
     </div>
 </body>
 </html>
