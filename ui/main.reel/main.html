@@ -2,21 +2,111 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Main</title>
-
-    <link rel="stylesheet" href="main.css">
-
+    <title>
+        Main
+    </title>
+    <link rel="stylesheet" href="https://work.montagestudio.com/app/43a769bad39d1b6616cd108fd3384eef51f7c016/main.css">
     <script type="text/montage-serialization">
-        {
-            "owner": {
-                "properties": {
-                    "element": {"#": "main"}
-                }
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "main"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
+        },
+        "actionEventListener": {
+            "prototype": "montage/core/event/action-event-listener",
+            "properties": {
+                "action": "onMainOwnerClick",
+                "handler": "click"
+            }
+        },
+        "badge": {
+            "prototype": "digit/ui/badge.reel",
+            "properties": {
+                "element": {"#": "badge"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
+        },
+        "flow": {
+            "prototype": "montage/ui/flow.reel",
+            "properties": {
+                "element": {"#": "flow"},
+                "cameraPosition": [
+                    0,
+                    0,
+                    1500
+                ],
+                "content": [],
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "paths": [
+                    {
+                        "knots": [
+                            {
+                                "knotPosition": [
+                                    -2400,
+                                    0,
+                                    -1
+                                ],
+                                "nextHandlerPosition": [
+                                    -800,
+                                    0,
+                                    -1
+                                ],
+                                "previousDensity": 10,
+                                "nextDensity": 10
+                            },
+                            {
+                                "knotPosition": [
+                                    2400,
+                                    0,
+                                    -1
+                                ],
+                                "previousHandlerPosition": [
+                                    800,
+                                    0,
+                                    -1
+                                ],
+                                "previousDensity": 10,
+                                "nextDensity": 10
+                            }
+                        ],
+                        "headOffset": 0,
+                        "tailOffset": 0,
+                        "units": {}
+                    }
+                ]
+            }
+        },
+        "image1": {
+            "prototype": "digit/ui/image.reel",
+            "properties": {
+                "element": {"#": "image1"},
+                "contenteditable": "true",
+                "crossOrigin": null,
+                "dir": "ltr",
+                "draggable": "true",
+                "src": "https://devrix-devrix.netdna-ssl.com/wp-content/uploads/2015/06/monta-730x300.jpg",
+                "style": "width:100%;",
+                "width": ""
             }
         }
+    }
     </script>
 </head>
 <body>
-    <div data-montage-id="main" data-montage-skin="light" class="Main"></div>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow">
+            <div data-montage-id="image1">
+                <output data-montage-id="badge"></output>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
